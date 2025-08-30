@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Software Engineer Portfolio</title>
+        <meta
+            name="description"
+            content="Portfolio website of a passionate software engineer"
+        />
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/jpeg" href="./favicon-cb3037ma.jpg" />
+        <link rel="apple-touch-icon" href="./favicon-cb3037ma.jpg" />
+
+        <!-- Prevent flash of unstyled content -->
+        <script>
+            (function () {
+                const stored = localStorage.getItem("theme");
+                const theme =
+                    stored && (stored === "light" || stored === "dark")
+                        ? stored
+                        : window.matchMedia("(prefers-color-scheme: dark)")
+                              .matches
+                        ? "dark"
+                        : "light";
+                document.documentElement.className = theme;
+            })();
+        </script>
+    <link rel="stylesheet" crossorigin href="./chunk-exb7khp0.css"><script type="module" crossorigin src="./chunk-t5wztdwr.js"></script></head>
+    <body>
+        <div id="root"></div>
+        
+    </body>
+</html>
