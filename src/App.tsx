@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, MapPin } from "lucide-react";
+import { Calendar, Github, Linkedin, Mail, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
     Card,
@@ -44,7 +44,7 @@ export default function App() {
                             Passionate about building scalable backend systems
                             and web3 integrations. I focus on solving meaningful
                             problems and using technology for social and
-                            environmental impact.
+                            environmental impact
                         </CardDescription>
                     </CardHeader>
                     <CardContent>
@@ -53,16 +53,16 @@ export default function App() {
                             currently working at Staking Rewards as a Senior
                             Software Engineer. My work has spanned backend
                             development, web3 integrations, and leading
-                            technical projects at startups like yayloh, where I
-                            served as Tech Lead. I specialize in building
-                            robust, clean systems with hands-on experience in
-                            Python, Go, Node.js, TypeScript, and blockchain
-                            technologies and staking protocols. I'm motivated by
-                            projects with purpose — whether in sustainability,
-                            social impact, or open collaboration. Outside of
-                            work, I volunteer on initiatives like AFRI, and I'm
-                            always exploring how technology can drive
-                            sustainability, creativity, and positive impact.
+                            technical projects at startups. I specialize in
+                            building robust, clean systems with hands-on
+                            experience in Go, Node.js, TypeScript, Python,
+                            blockchain technologies and staking protocols. I'm
+                            motivated by projects with purpose, whether in
+                            sustainability, social impact, or open
+                            collaboration. Outside of work, I volunteer on
+                            initiatives like AFRI, and I'm always exploring how
+                            technology can drive sustainability, creativity, and
+                            positive impact.
                         </p>
                     </CardContent>
                 </Card>
@@ -147,6 +147,22 @@ export default function App() {
                                 <a href="mailto:borsos.marton95@gmail.com">
                                     <Mail className="w-4 h-4" />
                                     Email
+                                </a>
+                            </Button>
+
+                            {/* Calendar Button */}
+                            <Button
+                                asChild
+                                variant="outline"
+                                className="flex items-center gap-2 !bg-green-400"
+                            >
+                                <a
+                                    href="https://calendly.com/martonborsos/1-1-call"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <Calendar className="w-4 h-4" />
+                                    Schedule a Meeting
                                 </a>
                             </Button>
                         </div>
