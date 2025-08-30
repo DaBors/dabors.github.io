@@ -80,18 +80,16 @@ export default function App() {
                                     Languages
                                 </h3>
                                 <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                                    {[
-                                        "Go",
-                                        "TypeScript",
-                                        "Python",
-                                    ].map((skill) => (
-                                        <div
-                                            key={skill}
-                                            className="bg-blue-50 border border-blue-200 rounded-lg px-3 py-2 text-center text-sm font-medium text-blue-700"
-                                        >
-                                            {skill}
-                                        </div>
-                                    ))}
+                                    {["Go", "TypeScript", "Python"].map(
+                                        (skill) => (
+                                            <div
+                                                key={skill}
+                                                className="bg-blue-50 border border-blue-200 rounded-lg px-3 py-2 text-center text-sm font-medium text-blue-700"
+                                            >
+                                                {skill}
+                                            </div>
+                                        )
+                                    )}
                                 </div>
                             </div>
 
