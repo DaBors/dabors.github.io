@@ -19,7 +19,7 @@ serve({
         }
 
         // Construct full file path from dist directory
-        const fullPath = path.join(process.cwd(), "dist", filePath);
+        const fullPath = path.join(process.cwd(), "docs", filePath);
 
         // Check if file exists
         if (existsSync(fullPath)) {
@@ -45,7 +45,7 @@ serve({
         }
 
         // Fallback to index.html for SPA routing
-        const indexPath = path.join(process.cwd(), "dist", "index.html");
+        const indexPath = path.join(process.cwd(), "docs", "index.html");
         if (existsSync(indexPath)) {
             return new Response(Bun.file(indexPath), {
                 headers: {
