@@ -73,27 +73,78 @@ export default function App() {
                         <CardTitle>Skills & Technologies</CardTitle>
                     </CardHeader>
                     <CardContent>
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                            {[
-                                "Go",
-                                "TypeScript",
-                                "Python",
-                                "Node.js",
-                                "AWS",
-                                "GCP",
-                                "Azure",
-                                "Docker",
-                                "CI/CD",
-                                "PostgreSQL",
-                                "GraphQL",
-                            ].map((skill) => (
-                                <div
-                                    key={skill}
-                                    className="bg-slate-100 rounded-lg px-3 py-2 text-center text-sm font-medium text-gray-700"
-                                >
-                                    {skill}
+                        <div className="space-y-6">
+                            {/* Languages */}
+                            <div>
+                                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                                    Languages
+                                </h3>
+                                <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                                    {[
+                                        "Go",
+                                        "TypeScript",
+                                        "Python",
+                                    ].map((skill) => (
+                                        <div
+                                            key={skill}
+                                            className="bg-blue-50 border border-blue-200 rounded-lg px-3 py-2 text-center text-sm font-medium text-blue-700"
+                                        >
+                                            {skill}
+                                        </div>
+                                    ))}
                                 </div>
-                            ))}
+                            </div>
+
+                            {/* Cloud Platforms */}
+                            <div>
+                                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                                    Cloud Platforms
+                                </h3>
+                                <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                                    {["AWS", "GCP", "Azure"].map((skill) => (
+                                        <div
+                                            key={skill}
+                                            className="bg-green-50 border border-green-200 rounded-lg px-3 py-2 text-center text-sm font-medium text-green-700"
+                                        >
+                                            {skill}
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+
+                            {/* Tools & DevOps */}
+                            <div>
+                                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                                    Tools & DevOps
+                                </h3>
+                                <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                                    {["Docker", "CI/CD"].map((skill) => (
+                                        <div
+                                            key={skill}
+                                            className="bg-purple-50 border border-purple-200 rounded-lg px-3 py-2 text-center text-sm font-medium text-purple-700"
+                                        >
+                                            {skill}
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+
+                            {/* Databases & APIs */}
+                            <div>
+                                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                                    Databases & APIs
+                                </h3>
+                                <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                                    {["PostgreSQL", "GraphQL"].map((skill) => (
+                                        <div
+                                            key={skill}
+                                            className="bg-orange-50 border border-orange-200 rounded-lg px-3 py-2 text-center text-sm font-medium text-orange-700"
+                                        >
+                                            {skill}
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
                         </div>
                     </CardContent>
                 </Card>
