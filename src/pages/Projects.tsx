@@ -13,15 +13,16 @@ import { projects } from "@/data/projects";
 export default function Projects() {
     return (
         <>
-            <div className="text-center mb-8">
-                <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                    Projects
-                </h2>
-                <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                    A collection of projects I've worked on, ranging from web3
-                    projects to web applications and enterprise solutions.
-                </p>
-            </div>
+            <Card className="mb-8">
+                <CardHeader>
+                    <CardTitle>Projects</CardTitle>
+                    <CardDescription>
+                        A collection of projects I've worked on, ranging from
+                        web3 projects to web applications and enterprise
+                        solutions.
+                    </CardDescription>
+                </CardHeader>
+            </Card>
 
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-1">
                 {projects.map((project) => (
@@ -117,16 +118,16 @@ export default function Projects() {
                                     </Button>
                                 )}
 
-                                {project.liveUrl && (
+                                {project.website && (
                                     <Button asChild variant="outline" size="sm">
                                         <a
-                                            href={project.liveUrl}
+                                            href={project.website}
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="flex items-center gap-2"
                                         >
                                             <ExternalLink className="w-4 h-4" />
-                                            Live Demo
+                                            Website
                                         </a>
                                     </Button>
                                 )}

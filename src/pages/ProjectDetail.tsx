@@ -100,10 +100,10 @@ export default function ProjectDetail() {
                                     </Button>
                                 )}
 
-                                {project.liveUrl && (
+                                {project.website && (
                                     <Button asChild variant="outline" size="sm">
                                         <a
-                                            href={project.liveUrl}
+                                            href={project.website}
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="flex items-center gap-2"

@@ -5,7 +5,7 @@ export interface Project {
     shortDescription: string;
     technologies: string[];
     githubUrl?: string;
-    liveUrl?: string;
+    website?: string;
     imageUrl?: string;
     featured: boolean;
     startDate: string;
@@ -41,7 +41,7 @@ Key features:
             "Kubernetes",
             "Redis",
         ],
-        liveUrl: "https://stakingrewards.com",
+        website: "https://stakingrewards.com",
         featured: true,
         startDate: "2023-08",
         endDate: undefined,
@@ -75,10 +75,53 @@ Key features:
             "Static Web Apps",
         ],
         githubUrl: "https://github.com/UCSC-UMN-AFRI/website",
-        liveUrl: "https://stateaglaws.org",
+        website: "https://stateaglaws.org",
         featured: true,
         startDate: "2025-02",
         endDate: "2025-07",
+    },
+    {
+        id: "yayloh",
+        title: "yayloh",
+        shortDescription:
+            "Enterprise SaaS platform for tracking and reducing corporate carbon emissions.",
+        description: ``,
+        technologies: [
+            "Python",
+            "Flask",
+            "SQLAlchemy",
+            "AWS",
+            "Lambda",
+            "SNS",
+            "S3",
+            "MySQL",
+        ],
+        featured: false,
+        website: "https://yayloh.com",
+        startDate: "2020-06",
+        endDate: "2023-07",
+    },
+    {
+        id: "microsec",
+        title: "Microsec",
+        shortDescription:
+            "Real-time blockchain transaction analysis and visualization platform.",
+        description: `Created a comprehensive blockchain analytics platform providing real-time transaction analysis, network health monitoring, and custom alerts for multiple blockchain networks.
+
+Analytics capabilities:
+• Real-time transaction flow visualization and analysis
+• Network health monitoring (block times, gas prices, mempool status)
+• Custom alerting system for specific addresses or transaction patterns
+• Historical data analysis with trend identification
+• API endpoints for integration with external systems
+• Support for Ethereum, Bitcoin, Polygon, and Binance Smart Chain
+
+The platform processes millions of transactions daily, providing insights to traders, researchers, and blockchain developers through interactive dashboards and programmatic access.`,
+        technologies: ["JavaScript", "Java", "REST", "MySQL"],
+        website: "https://www.microsec.hu/en",
+        featured: false,
+        startDate: "2018-07",
+        endDate: "2019-07",
     },
 ];
 
