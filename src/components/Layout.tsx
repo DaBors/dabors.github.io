@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Home, FolderOpen } from "lucide-react";
+import { Home, FolderOpen, MapPin } from "lucide-react";
 import profileImage from "../assets/profile.jpg";
 
 interface LayoutProps {
@@ -31,6 +31,12 @@ export default function Layout({ children }: LayoutProps) {
                     <p className="text-xl text-gray-600 mb-4">
                         Software Engineer
                     </p>
+
+                    {/* Location */}
+                    <div className="flex items-center justify-center text-gray-500 mb-6">
+                        <MapPin className="w-4 h-4 mr-2" />
+                        <span>Stockholm, Sweden</span>
+                    </div>
 
                     {/* Navigation */}
                     <div className="flex justify-center gap-4 mb-6">

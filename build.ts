@@ -2,7 +2,7 @@
 import { build, type BuildConfig } from "bun";
 import plugin from "bun-plugin-tailwind";
 import { existsSync } from "fs";
-import { rm } from "fs/promises";
+import { rm, copyFile } from "fs/promises";
 import path from "path";
 
 // Print help text if requested
@@ -164,6 +164,16 @@ const outputTable = result.outputs.map(output => ({
 }));
 
 console.table(outputTable);
+
+// Copy 404.html for GitHub Pages SPA routing
+const source404 = path.join(process.cwd(), "src", "404.html");
+const dest404 = path.join(outdir, "404.html");
+
+if (existsSync(source404)) {
+  await copyFile(source404, dest404);
+  console.log("📄 Copied 404.html for GitHub Pages SPA routing");
+}
+
 const buildTime = (end - start).toFixed(2);
 
 console.log(`\n✅ Build completed in ${buildTime}ms\n`);

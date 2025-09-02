@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-Q663RRWK9P"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-Q663RRWK9P");
+        </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Redirecting... - Márton Borsos</title>
+        <meta name="description" content="Portfolio website of Márton Borsos" />
+        <!-- Favicon -->
+        <link rel="icon" type="image/jpeg" href="./assets/favicon.jpg" />
+        <link rel="apple-touch-icon" href="./assets/favicon.jpg" />
+        <script>
+            // GitHub Pages SPA redirect script
+            // Store the current path and redirect to home with that path as a parameter
+            const currentPath = window.location.pathname;
+            const currentSearch = window.location.search;
+            const currentHash = window.location.hash;
+
+            // Redirect to index.html with the original path as a query parameter
+            const redirectUrl =
+                window.location.origin +
+                "/?redirect=" +
+                encodeURIComponent(currentPath + currentSearch + currentHash);
+
+            window.location.replace(redirectUrl);
+        </script>
+    </head>
+    <body>
+        <div
+            style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                font-family: system-ui, -apple-system, sans-serif;
+                background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            "
+        >
+            <div style="text-align: center">
+                <h2 style="color: #1e293b; margin-bottom: 8px">
+                    Redirecting...
+                </h2>
+                <p style="color: #64748b">
+                    If you are not redirected automatically,
+                    <a href="/" style="color: #3b82f6">click here</a>.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

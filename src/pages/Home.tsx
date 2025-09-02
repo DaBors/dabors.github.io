@@ -1,4 +1,4 @@
-import { Calendar, Github, Linkedin, Mail, MapPin } from "lucide-react";
+import { Calendar, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
     Card,
@@ -11,12 +11,6 @@ import {
 export default function Home() {
     return (
         <>
-            {/* Location */}
-            <div className="flex items-center justify-center text-gray-500 mb-6">
-                <MapPin className="w-4 h-4 mr-2" />
-                <span>Stockholm, Sweden</span>
-            </div>
-
             {/* About Section */}
             <Card className="mb-8">
                 <CardHeader>
