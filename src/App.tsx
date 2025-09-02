@@ -1,17 +1,12 @@
-import {
-    BrowserRouter as Router,
-    Routes,
-    Route,
-    useNavigate,
-} from "react-router-dom";
-import { useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useEffect, useState } from "react";
 import Layout from "@/components/Layout";
 import Home from "@/pages/Home";
 import Projects from "@/pages/Projects";
 import ProjectDetail from "@/pages/ProjectDetail";
 
-function RedirectHandler() {
-    const navigate = useNavigate();
+export default function App() {
+    const [isHandlingRedirect, setIsHandlingRedirect] = useState(true);
 
     useEffect(() => {
         // Check for redirect parameter from GitHub Pages 404 handling
@@ -19,20 +14,23 @@ function RedirectHandler() {
         const redirectPath = urlParams.get("redirect");
 
         if (redirectPath) {
-            // Clean up the URL by removing the redirect parameter
+            // Clean up the URL by removing the redirect parameter and navigate to the correct path
             const cleanPath = decodeURIComponent(redirectPath);
-            window.history.replaceState({}, "", cleanPath);
-            navigate(cleanPath, { replace: true });
+            const newUrl = window.location.origin + cleanPath;
+            window.history.replaceState({}, "", newUrl);
         }
-    }, [navigate]);
 
-    return null;
-}
+        // Always set to false to render the app
+        setIsHandlingRedirect(false);
+    }, []);
 
-export default function App() {
+    // Show loading spinner while handling the redirect
+    if (isHandlingRedirect) {
+        return <></>;
+    }
+
     return (
         <Router>
-            <RedirectHandler />
             <Layout>
                 <Routes>
                     <Route path="/" element={<Home />} />
