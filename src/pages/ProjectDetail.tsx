@@ -166,7 +166,7 @@ export default function ProjectDetail() {
                                                             key={bulletIndex}
                                                             className="flex items-start"
                                                         >
-                                                            <span className="text-blue-500 mr-3 mt-1">
+                                                            <span className="text-gray-500 mr-3 mt-1">
                                                                 •
                                                             </span>
                                                             <span>
