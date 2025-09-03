@@ -8,6 +8,15 @@ import {
     CardTitle,
 } from "@/components/ui/card";
 
+// TypeScript declaration for Calendly
+declare global {
+    interface Window {
+        Calendly?: {
+            initPopupWidget: (options: { url: string }) => void;
+        };
+    }
+}
+
 export default function Home() {
     return (
         <>
@@ -173,18 +182,18 @@ export default function Home() {
 
                         {/* Calendar Button */}
                         <Button
-                            asChild
                             variant="outline"
                             className="flex items-center gap-2 !bg-green-400"
+                            onClick={() => {
+                                if (window.Calendly) {
+                                    window.Calendly.initPopupWidget({
+                                        url: "https://calendly.com/martonborsos/1-1-call",
+                                    });
+                                }
+                            }}
                         >
-                            <a
-                                href="https://calendly.com/martonborsos/1-1-call"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <Calendar className="w-4 h-4" />
-                                Schedule a Meeting
-                            </a>
+                            <Calendar className="w-4 h-4" />
+                            Schedule a Meeting
                         </Button>
                     </div>
                 </CardContent>
