@@ -39,7 +39,7 @@ export default function ProjectDetail() {
                                 {project.title}
                             </h1>
                             {project.employment && (
-                                <div className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">
+                                <div className="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full">
                                     Employment
                                 </div>
                             )}
@@ -123,7 +123,7 @@ export default function ProjectDetail() {
                         {project.technologies.map((tech) => (
                             <div
                                 key={tech}
-                                className="bg-gray-50 border border-gray-200 rounded-lg px-3 py-2 flex items-center text-center justify-center text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors"
+                                className="bg-gray-50 border border-gray-200 rounded-lg px-3 py-2 flex items-center text-center justify-center text-sm font-medium text-gray-700"
                             >
                                 {tech}
                             </div>

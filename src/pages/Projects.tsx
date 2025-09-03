@@ -36,7 +36,7 @@ export default function Projects() {
                                     <CardTitle className="text-xl mb-2">
                                         <Link
                                             to={`/projects/${project.id}`}
-                                            className="hover:text-blue-600 transition-colors"
+                                            className="hover:text-gray-600 transition-colors"
                                         >
                                             {project.title}
                                         </Link>
@@ -46,7 +46,7 @@ export default function Projects() {
                                     </CardDescription>
                                 </div>
                                 {project.employment && (
-                                    <div className="bg-blue-100 text-blue-800 text-xs font-medium px-2 py-1 rounded-full ml-4">
+                                    <div className="bg-gray-200 text-gray-800 text-xs font-medium px-2 py-1 rounded-full ml-4">
                                         Employment
                                     </div>
                                 )}

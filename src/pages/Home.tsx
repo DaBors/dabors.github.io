@@ -66,7 +66,7 @@ export default function Home() {
                                 {["Go", "TypeScript", "Python"].map((skill) => (
                                     <div
                                         key={skill}
-                                        className="bg-blue-50 border border-blue-200 rounded-lg px-3 py-2 text-center text-sm font-medium text-blue-700"
+                                        className="bg-gray-100 border border-gray-200 rounded-lg px-3 py-2 text-center text-sm font-medium text-gray-700"
                                     >
                                         {skill}
                                     </div>
@@ -83,7 +83,7 @@ export default function Home() {
                                 {["AWS", "GCP", "Azure"].map((skill) => (
                                     <div
                                         key={skill}
-                                        className="bg-green-50 border border-green-200 rounded-lg px-3 py-2 text-center text-sm font-medium text-green-700"
+                                        className="bg-gray-100 border border-gray-200 rounded-lg px-3 py-2 text-center text-sm font-medium text-gray-700"
                                     >
                                         {skill}
                                     </div>
@@ -100,7 +100,7 @@ export default function Home() {
                                 {["Docker", "CI/CD"].map((skill) => (
                                     <div
                                         key={skill}
-                                        className="bg-purple-50 border border-purple-200 rounded-lg px-3 py-2 text-center text-sm font-medium text-purple-700"
+                                        className="bg-gray-100 border border-gray-200 rounded-lg px-3 py-2 text-center text-sm font-medium text-gray-700"
                                     >
                                         {skill}
                                     </div>
@@ -117,7 +117,7 @@ export default function Home() {
                                 {["PostgreSQL", "GraphQL"].map((skill) => (
                                     <div
                                         key={skill}
-                                        className="bg-orange-50 border border-orange-200 rounded-lg px-3 py-2 text-center text-sm font-medium text-orange-700"
+                                        className="bg-gray-100 border border-gray-200 rounded-lg px-3 py-2 text-center text-sm font-medium text-gray-700"
                                     >
                                         {skill}
                                     </div>
@@ -182,8 +182,9 @@ export default function Home() {
 
                         {/* Calendar Button */}
                         <Button
-                            variant="outline"
-                            className="flex items-center gap-2 !bg-green-400"
+                            // variant="outline"
+                            // className="flex items-center gap-2 !bg-green-400"
+                            variant="default"
                             onClick={() => {
                                 if (window.Calendly) {
                                     window.Calendly.initPopupWidget({
