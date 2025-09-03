@@ -30,27 +30,21 @@ export default function ProjectDetail() {
                 </Button>
             </div>
 
-            {/* Project header */}
-            <div className="text-center mb-8">
-                <div className="flex items-center justify-center gap-4 mb-4">
-                    <h1 className="text-3xl font-bold text-gray-900">
-                        {project.title}
-                    </h1>
-                    {project.employment && (
-                        <div className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">
-                            Employment
-                        </div>
-                    )}
-                </div>
-                <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                    {project.shortDescription}
-                </p>
-            </div>
-
             {/* Project metadata */}
             <Card className="mb-8">
                 <CardHeader>
-                    <CardTitle>Project Overview</CardTitle>
+                    <CardTitle>
+                        <div className="flex items-center justify-between gap-4 mb-4">
+                            <h1 className="text-3xl font-bold text-gray-900">
+                                {project.title}
+                            </h1>
+                            {project.employment && (
+                                <div className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">
+                                    Employment
+                                </div>
+                            )}
+                        </div>
+                    </CardTitle>
                 </CardHeader>
                 <CardContent>
                     <div className="grid gap-6 md:grid-cols-2">
@@ -109,7 +103,7 @@ export default function ProjectDetail() {
                                             className="flex items-center gap-2"
                                         >
                                             <ExternalLink className="w-4 h-4" />
-                                            Live Demo
+                                            Website
                                         </a>
                                     </Button>
                                 )}
@@ -142,10 +136,6 @@ export default function ProjectDetail() {
             <Card>
                 <CardHeader>
                     <CardTitle>About This Project</CardTitle>
-                    <CardDescription>
-                        Detailed overview of the project, its goals, and key
-                        achievements
-                    </CardDescription>
                 </CardHeader>
                 <CardContent>
                     <div className="prose prose-gray max-w-none">

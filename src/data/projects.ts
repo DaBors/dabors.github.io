@@ -82,8 +82,5 @@ Key features:
     },
 ];
 
-export const getFeaturedProjects = () =>
-    projects.filter((project) => project.employment);
-
 export const getProjectById = (id: string) =>
     projects.find((project) => project.id === id);
