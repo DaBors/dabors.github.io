@@ -20,9 +20,9 @@ export default function Layout({ children }: LayoutProps) {
                         <img
                             src={profileImage}
                             alt="Profile"
-                            className="w-32 h-32 rounded-full object-cover border-4 border-white shadow-lg"
+                            className="w-32 h-32 rounded-full object-cover shadow-lg"
                         />
-                        <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-green-500 rounded-full border-4 border-white"></div>
+                        <div className="absolute -bottom-0 -right-0 w-8 h-8 bg-green-500 rounded-full border-5 border-white"></div>
                     </div>
 
                     <h1 className="text-4xl font-bold text-gray-900 mb-2">
