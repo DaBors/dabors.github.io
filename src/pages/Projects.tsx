@@ -45,9 +45,9 @@ export default function Projects() {
                                         {project.shortDescription}
                                     </CardDescription>
                                 </div>
-                                {project.featured && (
+                                {project.employment && (
                                     <div className="bg-blue-100 text-blue-800 text-xs font-medium px-2 py-1 rounded-full ml-4">
-                                        Featured
+                                        Employment
                                     </div>
                                 )}
                             </div>

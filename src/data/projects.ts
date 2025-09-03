@@ -7,7 +7,7 @@ export interface Project {
     githubUrl?: string;
     website?: string;
     imageUrl?: string;
-    featured: boolean;
+    employment: boolean;
     startDate: string;
     endDate?: string;
 }
@@ -42,7 +42,7 @@ Key features:
             "Redis",
         ],
         website: "https://stakingrewards.com",
-        featured: true,
+        employment: true,
         startDate: "2023-08",
         endDate: undefined,
     },
@@ -76,14 +76,14 @@ Key features:
         ],
         githubUrl: "https://github.com/UCSC-UMN-AFRI/website",
         website: "https://stateaglaws.org",
-        featured: true,
+        employment: false,
         startDate: "2025-02",
         endDate: "2025-07",
     },
 ];
 
 export const getFeaturedProjects = () =>
-    projects.filter((project) => project.featured);
+    projects.filter((project) => project.employment);
 
 export const getProjectById = (id: string) =>
     projects.find((project) => project.id === id);

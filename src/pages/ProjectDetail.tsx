@@ -36,9 +36,9 @@ export default function ProjectDetail() {
                     <h1 className="text-3xl font-bold text-gray-900">
                         {project.title}
                     </h1>
-                    {project.featured && (
+                    {project.employment && (
                         <div className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">
-                            Featured Project
+                            Employment
                         </div>
                     )}
                 </div>
