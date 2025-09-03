@@ -47,13 +47,13 @@ export default function ProjectDetail() {
                     </CardTitle>
                 </CardHeader>
                 <CardContent>
-                    <div className="grid gap-6 md:grid-cols-2">
+                    <div className="grid gap-6 md:grid-cols-2 items-start">
                         {/* Timeline */}
                         <div>
                             <h3 className="text-sm font-semibold text-gray-900 mb-2">
                                 Timeline
                             </h3>
-                            <div className="flex items-center text-gray-600">
+                            <div className="flex items-center text-gray-600 min-h-[40px]">
                                 <Calendar className="w-4 h-4 mr-2" />
                                 <span>
                                     {new Date(
@@ -79,7 +79,7 @@ export default function ProjectDetail() {
                             <h3 className="text-sm font-semibold text-gray-900 mb-2">
                                 Links
                             </h3>
-                            <div className="flex flex-wrap gap-2">
+                            <div className="flex flex-wrap gap-2 min-h-[40px] items-center">
                                 {project.githubUrl && (
                                     <Button asChild variant="outline" size="sm">
                                         <a
