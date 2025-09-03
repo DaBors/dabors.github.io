@@ -119,11 +119,11 @@ export default function ProjectDetail() {
                     <CardTitle>Technologies Used</CardTitle>
                 </CardHeader>
                 <CardContent>
-                    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3 justify-items-center">
+                    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3">
                         {project.technologies.map((tech) => (
                             <div
                                 key={tech}
-                                className="bg-gray-50 border border-gray-200 rounded-lg px-3 py-2 text-center text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors"
+                                className="bg-gray-50 border border-gray-200 rounded-lg px-3 py-2 flex items-center text-center justify-center text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors"
                             >
                                 {tech}
                             </div>
