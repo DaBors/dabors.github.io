@@ -136,6 +136,20 @@ export default function Projects() {
                     </Card>
                 ))}
             </div>
+
+            {/* Coming soon message */}
+            <Card className="mt-8 border-dashed">
+                <CardContent className="flex items-center justify-center py-8">
+                    <div className="text-center text-gray-500">
+                        <p className="text-lg font-medium mb-2">
+                            More projects coming soon!
+                        </p>
+                        <p className="text-sm">
+                            I'm still adding more projects to showcase here.
+                        </p>
+                    </div>
+                </CardContent>
+            </Card>
         </>
     );
 }

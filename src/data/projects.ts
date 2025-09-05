@@ -84,7 +84,7 @@ export const projects: Project[] = [
     },
     {
         id: "yayloh",
-        title: "yayloh",
+        title: "Yayloh",
         shortDescription:
             "Shaped the architecture of yayloh's returns management system, creating a seamless and automated customer experience that helps fashion brands retain revenue and improve operational efficiency.",
         description: `As yayloh's first employee, I played a key role in designing and implementing a microservices-based platform dedicated to transforming returns for fashion brands. The platform provides a fully branded, self-service digital return flow from submission to shipping label generation and tracking, while also automating refunds, exchanges, and analytics. I worked on backend services that integrated with Shopify and other e-commerce tools, enabling customizable workflows, multi-carrier support, and actionable insights that help merchants optimize return operations and increase retention.
