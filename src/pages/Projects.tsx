@@ -9,6 +9,7 @@ import {
     CardTitle,
 } from "@/components/ui/card";
 import { projects } from "@/data/projects";
+import { TechnologyIcon, hasTechnologyIcon } from "@/components/TechnologyIcon";
 
 export default function Projects() {
     return (
@@ -61,8 +62,14 @@ export default function Projects() {
                                         .map((tech) => (
                                             <span
                                                 key={tech}
-                                                className="bg-gray-100 border border-gray-200 rounded-md px-2 py-1 text-xs font-medium text-gray-700"
+                                                className="group bg-gray-100 border border-gray-200 rounded-md px-2 py-1 text-xs font-medium text-gray-700 flex items-center gap-1"
                                             >
+                                                {hasTechnologyIcon(tech) && (
+                                                    <TechnologyIcon
+                                                        technology={tech}
+                                                        size={14}
+                                                    />
+                                                )}
                                                 {tech}
                                             </span>
                                         ))}

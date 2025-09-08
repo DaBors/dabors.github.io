@@ -9,6 +9,7 @@ import {
     CardTitle,
 } from "@/components/ui/card";
 import { getProjectById } from "@/data/projects";
+import { TechnologyIcon, hasTechnologyIcon } from "@/components/TechnologyIcon";
 
 export default function ProjectDetail() {
     const { projectId } = useParams<{ projectId: string }>();
@@ -123,8 +124,14 @@ export default function ProjectDetail() {
                         {project.technologies.map((tech) => (
                             <div
                                 key={tech}
-                                className="bg-gray-50 border border-gray-200 rounded-lg px-3 py-2 flex items-center text-center justify-center text-sm font-medium text-gray-700"
+                                className="group bg-gray-50 border border-gray-200 rounded-lg px-3 py-2 flex items-center justify-center gap-2 text-sm font-medium text-gray-700"
                             >
+                                {hasTechnologyIcon(tech) && (
+                                    <TechnologyIcon
+                                        technology={tech}
+                                        size={16}
+                                    />
+                                )}
                                 {tech}
                             </div>
                         ))}

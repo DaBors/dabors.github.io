@@ -7,6 +7,7 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card";
+import { TechnologyIcon, hasTechnologyIcon } from "@/components/TechnologyIcon";
 
 // TypeScript declaration for Calendly
 declare global {
@@ -66,8 +67,14 @@ export default function Home() {
                                 {["Go", "TypeScript", "Python"].map((skill) => (
                                     <div
                                         key={skill}
-                                        className="bg-gray-100 border border-gray-200 rounded-lg px-3 py-2 text-center text-sm font-medium text-gray-700"
+                                        className="group bg-gray-100 border border-gray-200 rounded-lg px-3 py-2 flex items-center justify-center gap-2 text-sm font-medium text-gray-700"
                                     >
+                                        {hasTechnologyIcon(skill) && (
+                                            <TechnologyIcon
+                                                technology={skill}
+                                                size={16}
+                                            />
+                                        )}
                                         {skill}
                                     </div>
                                 ))}
@@ -83,8 +90,14 @@ export default function Home() {
                                 {["AWS", "GCP", "Azure"].map((skill) => (
                                     <div
                                         key={skill}
-                                        className="bg-gray-100 border border-gray-200 rounded-lg px-3 py-2 text-center text-sm font-medium text-gray-700"
+                                        className="group bg-gray-100 border border-gray-200 rounded-lg px-3 py-2 flex items-center justify-center gap-2 text-sm font-medium text-gray-700"
                                     >
+                                        {hasTechnologyIcon(skill) && (
+                                            <TechnologyIcon
+                                                technology={skill}
+                                                size={16}
+                                            />
+                                        )}
                                         {skill}
                                     </div>
                                 ))}
@@ -97,11 +110,17 @@ export default function Home() {
                                 Tools & DevOps
                             </h3>
                             <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                                {["Docker", "CI/CD"].map((skill) => (
+                                {["Docker", "Kubernetes"].map((skill) => (
                                     <div
                                         key={skill}
-                                        className="bg-gray-100 border border-gray-200 rounded-lg px-3 py-2 text-center text-sm font-medium text-gray-700"
+                                        className="group bg-gray-100 border border-gray-200 rounded-lg px-3 py-2 flex items-center justify-center gap-2 text-sm font-medium text-gray-700"
                                     >
+                                        {hasTechnologyIcon(skill) && (
+                                            <TechnologyIcon
+                                                technology={skill}
+                                                size={16}
+                                            />
+                                        )}
                                         {skill}
                                     </div>
                                 ))}
@@ -117,8 +136,14 @@ export default function Home() {
                                 {["PostgreSQL", "GraphQL"].map((skill) => (
                                     <div
                                         key={skill}
-                                        className="bg-gray-100 border border-gray-200 rounded-lg px-3 py-2 text-center text-sm font-medium text-gray-700"
+                                        className="group bg-gray-100 border border-gray-200 rounded-lg px-3 py-2 flex items-center justify-center gap-2 text-sm font-medium text-gray-700"
                                     >
+                                        {hasTechnologyIcon(skill) && (
+                                            <TechnologyIcon
+                                                technology={skill}
+                                                size={16}
+                                            />
+                                        )}
                                         {skill}
                                     </div>
                                 ))}
