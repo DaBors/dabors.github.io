@@ -14,6 +14,26 @@ export interface Project {
 
 export const projects: Project[] = [
     {
+        id: "prediction-index",
+        title: "Prediction Index",
+        shortDescription:
+            "A comprehensive index of prediction markets and the prediction market ecosystem.",
+        description: ``,
+        technologies: [
+            "React",
+            "Next.js",
+            "TypeScript",
+            "TailwindCSS",
+            "Bun",
+            "PM2",
+            "PostgreSQL",
+        ],
+        website: "https://predictionindex.xyz",
+        employment: true,
+        startDate: "2025-09",
+        endDate: undefined,
+    },
+    {
         id: "staking-rewards",
         title: "Staking Rewards",
         shortDescription:
@@ -45,7 +65,7 @@ export const projects: Project[] = [
         website: "https://stakingrewards.com",
         employment: true,
         startDate: "2023-08",
-        endDate: undefined,
+        endDate: "2025-09",
     },
     {
         id: "state-agricultural-legislation-search",
