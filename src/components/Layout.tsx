@@ -76,7 +76,7 @@ export default function Layout({ children }: LayoutProps) {
 
                 {/* Footer */}
                 <footer className="text-center mt-12 text-gray-500 text-sm">
-                    <p>© 2025 Márton Borsos</p>
+                    <p>© 2026 Márton Borsos</p>
                 </footer>
             </div>
         </div>
