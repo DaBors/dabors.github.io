@@ -15,6 +15,9 @@ import {
     AWS,
     Docker,
     Kubernetes,
+    ClickHouse,
+    BunJs,
+    NextJs,
 } from "developer-icons";
 
 interface TechnologyIconProps {
@@ -38,6 +41,7 @@ const technologyIconMap: Record<
     // Frontend
     React: React,
     TailwindCSS: TailwindCSS,
+    "Next.js": NextJs,
 
     // Backend & Frameworks
     Flask: FlaskDark,
@@ -55,6 +59,8 @@ const technologyIconMap: Record<
     AWS: AWS,
     Docker: Docker,
     Kubernetes: Kubernetes,
+    ClickHouse: ClickHouse,
+    Bun: BunJs,
 
     // Services (using cloud provider icons as fallbacks)
     Lambda: AWS,

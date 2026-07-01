@@ -26,24 +26,26 @@ export default function Home() {
 				<CardHeader>
 					<CardTitle>About Me</CardTitle>
 					<CardDescription>
-						Passionate about building scalable backend systems and web3
-						integrations. I focus on solving meaningful problems and using
-						technology for social and environmental impact.
+						Passionate about building scalable backend systems, web3
+						integrations, and AI agent infrastructure. I focus on solving
+						meaningful problems and using technology for social and
+						environmental impact.
 					</CardDescription>
 				</CardHeader>
 				<CardContent>
 					<p className="text-gray-700 leading-relaxed">
 						I'm a software engineer with 7+ years of experience, currently
-						Co-founder and CTO of Prediction Index and Over.Computer in the
-						prediction market and AI agent space. My work has spanned backend
-						development, web3 integrations, and leading technical projects at
-						startups. I specialize in building robust, clean systems with
-						hands-on experience in Go, Node.js, TypeScript, Python, blockchain
-						technologies and staking protocols. I'm motivated by projects with
-						purpose, whether in sustainability, social impact, or open
-						collaboration. Outside of work, I volunteer on initiatives like
-						AFRI, and I'm always exploring how technology can drive
-						sustainability, creativity, and positive impact.
+						Co-founder and CTO of Over Computer, building AI agent
+						infrastructure for autonomous trading on prediction markets. My work
+						has spanned backend development, web3 integrations, and leading
+						technical projects at startups. I specialize in building robust,
+						secure-by-design systems with hands-on experience in Go, Node.js,
+						TypeScript, Python, blockchain technologies, and LLM-orchestrated
+						agent pipelines. I'm motivated by projects with purpose, whether in
+						sustainability, social impact, or open collaboration. Outside of
+						work, I've volunteered on initiatives like AFRI, and I'm always
+						exploring how technology can drive sustainability, creativity, and
+						positive impact.
 					</p>
 				</CardContent>
 			</Card>
@@ -61,7 +63,7 @@ export default function Home() {
 								Languages
 							</h3>
 							<div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-								{["Go", "TypeScript", "Python"].map((skill) => (
+								{["Go", "TypeScript", "Python", "Node.js"].map((skill) => (
 									<div
 										key={skill}
 										className="group bg-gray-100 border border-gray-200 rounded-lg px-3 py-2 flex items-center justify-center gap-2 text-sm font-medium text-gray-700"
@@ -101,7 +103,7 @@ export default function Home() {
 								Tools & DevOps
 							</h3>
 							<div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-								{["Docker", "Kubernetes"].map((skill) => (
+								{["Docker", "Kubernetes", "ClickHouse", "Bun"].map((skill) => (
 									<div
 										key={skill}
 										className="group bg-gray-100 border border-gray-200 rounded-lg px-3 py-2 flex items-center justify-center gap-2 text-sm font-medium text-gray-700"
@@ -132,6 +134,50 @@ export default function Home() {
 										{skill}
 									</div>
 								))}
+							</div>
+						</div>
+
+						{/* Web3 & Blockchain */}
+						<div>
+							<h3 className="text-lg font-semibold text-gray-900 mb-3">
+								Web3 & Blockchain
+							</h3>
+							<div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+								{["viem", "web3.js", "starknet.js", "cosmjs", "gRPC"].map(
+									(skill) => (
+										<div
+											key={skill}
+											className="group bg-gray-100 border border-gray-200 rounded-lg px-3 py-2 flex items-center justify-center gap-2 text-sm font-medium text-gray-700"
+										>
+											{hasTechnologyIcon(skill) && (
+												<TechnologyIcon technology={skill} size={16} />
+											)}
+											{skill}
+										</div>
+									),
+								)}
+							</div>
+						</div>
+
+						{/* AI & Agents */}
+						<div>
+							<h3 className="text-lg font-semibold text-gray-900 mb-3">
+								AI & Agents
+							</h3>
+							<div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+								{["Vercel AI SDK", "OpenRouter", "LLM Agent Pipelines"].map(
+									(skill) => (
+										<div
+											key={skill}
+											className="group bg-gray-100 border border-gray-200 rounded-lg px-3 py-2 flex items-center justify-center gap-2 text-sm font-medium text-gray-700"
+										>
+											{hasTechnologyIcon(skill) && (
+												<TechnologyIcon technology={skill} size={16} />
+											)}
+											{skill}
+										</div>
+									),
+								)}
 							</div>
 						</div>
 					</div>

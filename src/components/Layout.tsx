@@ -29,7 +29,7 @@ export default function Layout({ children }: LayoutProps) {
                         Márton Borsos
                     </h1>
                     <p className="text-xl text-gray-600 mb-4">
-                        Software Engineer
+                        Co-Founder & CTO · Software Engineer
                     </p>
 
                     {/* Location */}
